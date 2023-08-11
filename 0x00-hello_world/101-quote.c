@@ -1,13 +1,11 @@
+#include <stdio.h>
 #include <unistd.h>
 /**
-* main - This program prints a message to the standard error.
-*
-* Return: Always 0 (Success)
+* main - A C programme that prints a line to the standard error
+* Return: 1 (success)
 */
 int main(void)
 {
-	char str[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	int len = sizeof(str) - 1;
-	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", len);
-	return (1);
+		fput("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stdout);
+		return (1);
 }
