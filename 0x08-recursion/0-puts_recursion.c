@@ -1,11 +1,9 @@
 #include <stdio.h>
-
 /**
- * print_recursive_string - displays a string and adds a new line
- * @str: pointer to the string to be shown
- * Result: No direct return value.
- * It carries out its function recursively.
- */
+* print_recursive_string - shows a string and includes a unused line
+* @str: pointer to the string to be appeared
+* Result: No coordinate return value
+*/
 void print_recursive_string(char *str)
 {
     if (*str == '\0')
