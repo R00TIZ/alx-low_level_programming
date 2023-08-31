@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-* last_index - returns the final file of a string (checks the invalid char)
-* @s: pointer the string
-* Return: int
-*/
+ * last_index - returns the last index of a string (counts the null char)
+ * @s: pointer the string
+ * Return: int
+ */
 int is_palindrome(char *s);
 int check(char *s, int start, int end, int mod);
 int last_index(char *s)

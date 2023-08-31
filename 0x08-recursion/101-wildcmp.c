@@ -1,9 +1,11 @@
 #include "main.h"
+
 /**
-* move_past_star - emphasizes past reference bullet
-* @s2: the moment string, can contain wildcard
-* Return: the pointer past star
-*/
+ * move_past_star - iterates past asterisk
+ * @s2: the second string, can contain wildcard
+ *
+ * Return: the pointer past star
+ */
 char *move_past_star(char *s2)
 {
 	if (*s2 == '*')

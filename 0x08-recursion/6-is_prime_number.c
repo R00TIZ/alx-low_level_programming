@@ -1,11 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* is_prime_number - check on the off chance that n may be a prime number
-* @othrn:int
-* @n: int
-* Return: or 1
-*/
+ * is_prime_number - check if n is a prime number
+ * @othrn:int
+ * @n: int
+ * Return: 0 or 1
+ */
 
 int check_prime(int n, int othrn);
 int is_prime_number(int n)
