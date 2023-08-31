@@ -1,32 +1,33 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
- * is_prime_number - check if n is a prime number
- * @othrn:int
- * @n: int
- * Return: 0 or 1
+ * prime_a - main - check the code
+ * @a: number
+ * @b: number of power
+ * Return: Always 0.
  */
 
-int check_prime(int n, int othrn);
-int is_prime_number(int n)
+int prime_a(int a, int b)
 {
-return (check_prime(n, 2));
+	if (a <= 1 || (a != b && a % b == 0))
+	{
+		return (0);
+	}
+		else if (a == b)
+	{
+		return (1);
+	}
+	return (prime_a(a, b + 1));
 }
 
+
 /**
- * check_prime - check all number < n if they can divide it
- * @n: int
- * @othrn: int
- * Return: int
+ * is_prime_number - main - check the code
+ * @n: number
+ *
+ * Return: Always 0.
  */
-
-int check_prime(int n, int othrn)
+int is_prime_number(int n)
 {
-
-if (othrn >= n && n > 1)
-	return (1);
-else if (n % othrn == 0 || n <= 1)
-	return (0);
-else
-	return (check_prime(n, othrn + 1));
+	return (prime_a(n, 2));
 }

@@ -1,21 +1,17 @@
-#include <stdio.h>
-#include <main.h>
+#include "main.h"
 
 /**
- * print_recursive_string - displays a string and adds a new line
- * @str: pointer to the string to be shown
- * Result: No direct return value.
- * It carries out its function recursively.
+ * _puts_recursion - main - check the code
+ * @s: character of string
+ * Return: Always 0.
  */
-void print_recursive_string(char *str)
+void _puts_recursion(char *s)
 {
-    if (*str == '\0')
-    {
-        putchar('\n');
-    }
-    else
-    {
-        putchar(*str);
-        print_recursive_string(str + 1);
-    }
+	if (*(s) != '\0')
+	{
+		_putchar(*s);
+		_puts_recursion(s + 1);
+	}
+	if (*(s) == '\0')
+		_putchar('\n');
 }
